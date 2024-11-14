@@ -30,7 +30,7 @@ const page = () => {
        "shorturl": shortUrl
      });
      
-     let response = await fetch("/api/generate", { 
+     let response = await fetch("https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/api/generate", { 
        method: "POST",
        body: bodyContent,
        headers: headersList
@@ -61,7 +61,7 @@ const page = () => {
         theme: "colored",
         });
       }
-      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${process.env.NEXT_PUBLIC_HOST}`})
+      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${"https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/"}`})
       setShortUrl("")
      setUrl("")
      

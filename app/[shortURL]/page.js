@@ -21,7 +21,7 @@ const Page = () => {
 
         const bodyContent = JSON.stringify({ shorturl });
 
-        const response = await fetch("http://localhost:3000/api/URL", {
+        const response = await fetch("https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/api/URL", {
           method: "POST",
           body: bodyContent,
           headers: headersList,
