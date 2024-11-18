@@ -21,7 +21,7 @@ const Page = () => {
 
         const bodyContent = JSON.stringify({ shorturl });
 
-        const response = await fetch("https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/api/URL", {
+        const response = await fetch("http://localhost:3000/api/URL", {
           method: "POST",
           body: bodyContent,
           headers: headersList,
@@ -35,10 +35,10 @@ const Page = () => {
         if (data.message) {
           router.push(data.message);
         } else {
-          console.error("API response missing 'message'");
+          console.log("API response missing 'message'");
         }
       } catch (error) {
-        console.error("Failed to fetch redirect URL:", error);
+        console.log("Failed to fetch redirect URL:", error);
       } finally {
         setIsLoading(false); // Prevent loading spinner if needed
       }

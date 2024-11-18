@@ -30,7 +30,7 @@ const page = () => {
        "shorturl": shortUrl
      });
      
-     let response = await fetch("https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/api/generate", { 
+     let response = await fetch("/api/generate", { 
        method: "POST",
        body: bodyContent,
        headers: headersList
