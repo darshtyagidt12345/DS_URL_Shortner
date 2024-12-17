@@ -61,7 +61,7 @@ const page = () => {
         theme: "colored",
         });
       }
-      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${"https://ds-url-shortner-tmyc-git-main-darshtyagidt12345s-projects.vercel.app/"}`})
+      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${"http://localhost:3000/"}`})
       setShortUrl("")
      setUrl("")
      
