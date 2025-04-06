@@ -21,7 +21,7 @@ const Page = () => {
 
         const bodyContent = JSON.stringify({ shorturl });
 
-        const response = await fetch(`/api/URL`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/URL`, {
           method: "POST",
           body: bodyContent,
           headers: headersList,
