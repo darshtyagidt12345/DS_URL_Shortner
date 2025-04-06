@@ -61,7 +61,7 @@ const page = () => {
         theme: "colored",
         });
       }
-      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${"http://localhost:3000/"}`})
+      setGenerated({gmessage:`${shortUrl}`,gsuccess:true,h:`${process.env.NEXT_PUBLIC_HOST}`})
       setShortUrl("")
      setUrl("")
      
