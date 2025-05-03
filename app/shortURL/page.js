@@ -107,7 +107,7 @@ const page = () => {
           <button type="submit" className='ml-16 mt-10 border border-black hover:bg-pink-500 hover:border-pink-500 hover:text-white rounded-md'>Short URL</button>
         </form>
       </div>
-        {Generated.gsuccess&&<div className='font-bold'><section>Short URL</section><section>{Generated.h}{Generated.gmessage}</section></div>}
+        {Generated.gsuccess&&<div className='font-bold'><section>Short URL</section><section>{Generated.h}/{Generated.gmessage}</section></div>}
     </div>
   )
 }
