@@ -60,7 +60,7 @@ const Page = () => {
               <tr key={index} className="hover:bg-gray-50">
                 <td className="px-4 py-2 text-sm text-blue-600 underline">
                   <Link href={item.shorturl} target="_blank">
-                    {`${process.env.NEXT_PUBLIC_HOST==""?"http://localhost:3000":process.env.NEXT_PUBLIC_HOST}${item.shorturl}`}
+                    {`${process.env.NEXT_PUBLIC_HOST==""?"http://localhost:3000":process.env.NEXT_PUBLIC_HOST}/${item.shorturl}`}
                   </Link>
                 </td>
                 <td className="px-4 py-2 text-sm text-blue-600 underline">
