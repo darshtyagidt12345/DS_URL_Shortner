@@ -4,7 +4,7 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <header className="h-20 shadow-xl fixed top-0 w-full flex items-center justify-between px-4">
+    <header className="h-20 shadow-xl fixed top-0 w-full flex items-center justify-between px-4 bg-white bg-opacity-100 z-50">
       <div className="flex items-center h-28 w-28 mt-6">
         <Image     
           src="/DS_URL_SHORTNER-removebg-preview.png"
@@ -17,6 +17,9 @@ const Nav = () => {
         <ul className="flex gap-6 items-center">
           <li>
             <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/shortURLs">See all URL(s)</Link>
           </li>
           <li>
             <Link href="/shortURL">Short URL</Link>
